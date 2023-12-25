@@ -1,0 +1,34 @@
+Basic
+	/* Syntax__Xpath=//tagname[@attribute='value'];
+Xpath=//input[@type='text']				
+Xpath=	//label[@id='message23']
+Xpath=	//input[@value='RESET']
+Xpath=//*[@class='barone']
+Xpath=//a[@href='http://demo.guru99.com/']
+Xpath= //img[@src='//cdn.guru99.com/images/home/java.png']
+ */
+	
+	Contains:
+	Xpath=//tagname[contains(@attribute,'partialvalue')]
+	
+	EX:
+	Xpath=//*[contains(text(),'here')]
+	Xpath=//*[contains(@href,'guru99.com')]	
+	
+	Using AND or OR:
+	
+	OR:
+	Xpath=//tagname[@attribute='value' or @attribute='value']
+	
+	EX:
+	Xpath=//*[@type='submit' or @name='btnReset']
+	Xpath=//input[@type='submit' and @name='btnLogin']
+	
+	Starts-with:
+	Xpath=//tagname[starts-with(@attribute,'value')]
+	
+	EX: Xpath=//label[starts-with(@id,'message')]
+	
+	text():
+	Xpath=//tagname[text()='value']
+	Xpath=//td[text()='UserID']
